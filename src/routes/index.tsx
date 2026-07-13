@@ -3,7 +3,7 @@ import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { HeroSlider } from "@/components/site/HeroSlider";
-import { AboutSection, StatsRow, WhyChooseUs, ServicesList, HowItWorks, ValuesSection, TeamGrid, TestimonialsSection, PricingSection, FaqSection, BlogPreview } from "@/components/site/sections";
+import { AboutSection, StatsRow, WhyChooseUs, ServicesList, HowItWorks, TestimonialsSection, PricingSection, FaqSection, BlogPreview } from "@/components/site/sections";
 
 export const Route = createFileRoute("/")({ component: Home });
 
@@ -17,8 +17,6 @@ function Home() {
       <WhyChooseUs />
       <ServicesList />
       <HowItWorks />
-      <ValuesSection />
-      <TeamGrid />
       <TestimonialsSection />
       <PricingSection />
       <FaqSection />
