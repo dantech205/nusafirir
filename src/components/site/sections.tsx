@@ -47,10 +47,10 @@ export function StatsRow() {
 
 export function WhyChooseUs() {
   const cards = [
-    { icon: Globe2, title: "Handpicked Destinations", body: "Every route is scouted in person. If we wouldn't send our own family, it's not on the map." },
-    { icon: Briefcase, title: "Tailored Travel Packages", body: "No rigid templates. Every itinerary is rebuilt around your pace, interests and budget." },
-    { icon: Star, title: "Exceptional Service", body: "Senior travel designers, quiet vendor relationships and a bias toward hospitality." },
-    { icon: Phone, title: "24/7 Customer Support", body: "Real humans on call from enquiry through arrival home — never a chatbot.", highlight: true },
+    { icon: Globe2, title: "Tailored Experiences", body: "Curated with care, shaped around your story" },
+    { icon: Briefcase, title: "Luxury Hospitality", body: "Guest management at the highest level of panache" },
+    { icon: Star, title: "Seamless Logistics", body: "Easy flow of resources and time management for impactful gatherings" },
+    { icon: Phone, title: "World Class standards, local heart", body: "Where prestige meets soul", highlight: true },
   ];
   return (
     <section className="py-24 bg-background">
