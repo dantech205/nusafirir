@@ -21,8 +21,8 @@ export function HeroSlider() {
       type: 'video',
       src: 'https://commondatastorage.googleapis.com/gtv-videos-library/sample/ForBiggerBlazes.mp4',
       fallbackImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80',
-      title: 'Journey Beyond Boundaries',
-      subtitle: 'Handpicked destinations, tailored packages and 24/7 concierge — everything you need for an unforgettable journey.'
+      title: 'Travel Beyond the Destination. Experience the Extraordinary.',
+      subtitle: 'We curate world-class events and personalized VIP concierge services that redefine luxury.'
     },
     {
       id: 2,
