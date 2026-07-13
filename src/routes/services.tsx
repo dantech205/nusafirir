@@ -15,7 +15,7 @@ function Services() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar transparent />
-      <PageHero title="Services" image={IMG.heroServices} crumb="Services" />
+      <PageHero title="Experiences" image={IMG.heroServices} crumb="Experiences" />
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-14">
           <div>

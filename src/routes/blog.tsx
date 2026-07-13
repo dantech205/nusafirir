@@ -14,7 +14,7 @@ function Blog() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar transparent />
-      <PageHero title="Blog" image={IMG.heroTest} crumb="Blog" />
+      <PageHero title="Memories" image={IMG.heroTest} crumb="Memories" />
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-3 gap-6">
           {blog.map((b) => (

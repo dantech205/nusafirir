@@ -10,7 +10,7 @@ export const Route = createFileRoute("/pricing")({
   component: () => (
     <div className="min-h-screen bg-background">
       <Navbar transparent />
-      <PageHero title="Pricing" image={IMG.heroServices} crumb="Pricing" />
+      <PageHero title="Booking" image={IMG.heroServices} crumb="Booking" />
       <PricingSection />
       <CtaBanner />
       <Footer />
