@@ -29,8 +29,8 @@ export function HeroSlider() {
       type: 'video',
       src: 'https://commondatastorage.googleapis.com/gtv-videos-library/sample/ElephantsDream.mp4',
       fallbackImage: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=2000&q=80',
-      title: 'Explore Exotic Destinations',
-      subtitle: 'Discover breathtaking locations handpicked by our travel experts for unforgettable experiences.'
+      title: 'Where Every Journey is Designed Around You.',
+      subtitle: 'From luxury escapes and wellness retreats to destination weddings and executive travel, every experience is thoughtfully designed around you.'
     },
   ];
 
