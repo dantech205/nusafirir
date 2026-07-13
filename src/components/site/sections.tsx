@@ -12,12 +12,12 @@ export function AboutSection() {
       <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-14 items-start">
         <div>
           <Eyebrow>About Us</Eyebrow>
-          <h2 className="mt-5 text-4xl md:text-5xl leading-[1.05]">Creating Unforgettable Journeys Around the World</h2>
+          <h2 className="mt-5 text-4xl md:text-5xl leading-[1.05]">Curating Remarkable Events. Delivering Bespoke Experiences.</h2>
         </div>
         <div className="space-y-6 text-muted-foreground">
           <div className="flex items-start gap-5">
             <div className="h-14 w-14 shrink-0 rounded-full bg-foreground text-lime flex items-center justify-center"><Compass className="h-6 w-6" /></div>
-            <p>At Voyanta we believe travel is more than visiting new places — it's a way of collecting stories, tasting cultures and returning home a little braver than you left.</p>
+            <p>Nusafiri is a luxury hospitality and experiential concierge brand dedicated to creating meaningful, tailor-made experiences for discerning travelers, VIP guests, and visionary conveners.</p>
           </div>
           <p>From mountain escapes and tropical beaches to cultural discoveries and family retreats, we design journeys that fit how you actually travel — not the other way around.</p>
           <Link to="/about" className="btn-outline-dark mt-2">More About Us</Link>
