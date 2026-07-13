@@ -33,7 +33,7 @@ export function StatsRow() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl mb-14">
           <h2 className="text-4xl md:text-5xl">Explore Around</h2>
-          <p className="mt-4 text-muted-foreground">From alpine ridgelines to coral coves and living cultural traditions, we've spent years building the kind of trips travelers remember for a lifetime.</p>
+          <p className="mt-4 text-muted-foreground">From bespoke travel and wellness journeys to high-level guest management, event logistics, and intentional convenings, we offer a seamless fusion of service, excellence and care to curate unforgettable experiences.</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           {[[7,"Years Experience"],[300,"Destinations"],[10000,"Happy Travelers"],[50,"Travel Experts"]].map(([n,l]) => (
