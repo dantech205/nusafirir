@@ -83,7 +83,7 @@ export function ServicesList() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <Eyebrow>Our Services</Eyebrow>
-            <h2 className="mt-5 text-4xl md:text-5xl max-w-2xl leading-[1.05]">Comprehensive Travel Solutions for Every Journey</h2>
+            <h2 className="mt-5 text-4xl md:text-5xl max-w-2xl leading-[1.05]">Comprehensive Experiences tailored around your needs</h2>
           </div>
           <div className="max-w-md text-muted-foreground">
             <p>From weekend escapes to complex multi-country expeditions, our team designs travel that feels considered, personal and effortlessly organised.</p>
