@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const mainMenu = [
@@ -11,21 +11,14 @@ const mainMenu = [
 ];
 
 export function Navbar({ transparent = false }: { transparent?: boolean }) {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    onScroll();
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-  const solid = !transparent || scrolled;
+  const solid = !transparent;
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${solid ? "bg-white/95 backdrop-blur border-b border-border shadow-sm" : "bg-transparent"}`}>
+    <header className="absolute top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
       <div className="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between">
         <Link to="/" className={`flex items-center gap-2 text-xl font-display font-semibold tracking-tight ${solid ? "text-foreground" : "text-white"}`}>
-          <span className="text-lime text-2xl">✻</span> Voyanta
+          <img src="/logo2.png" alt="Voyanta" className="h-12 w-auto" />
         </Link>
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide">
           {mainMenu.map((l) => (
@@ -42,7 +35,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
       {open && (
         <div className="fixed inset-0 z-50 bg-white flex flex-col">
           <div className="flex items-center justify-between h-20 px-6 border-b border-border">
-            <span className="text-xl font-display font-semibold"><span className="text-lime">✻</span> Voyanta</span>
+            <img src="/logo2.png" alt="Voyanta" className="h-12 w-auto" />
             <button onClick={() => setOpen(false)} aria-label="Close"><X /></button>
           </div>
           <nav className="flex flex-col px-6 py-6 gap-4 text-lg">

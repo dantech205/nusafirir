@@ -55,7 +55,7 @@ function Contact() {
             { I: MapPin, t: "Office Address", l: ["221B Palm Grove Ave,", "Santa Monica, CA 90401"] },
           ].map((c) => (
             <div key={c.t} className="rounded-3xl bg-card border border-border p-8 text-center">
-              <div className="mx-auto h-14 w-14 rounded-full bg-foreground text-lime flex items-center justify-center"><c.I className="h-5 w-5" /></div>
+              <div className="mx-auto h-14 w-14 rounded-full bg-foreground flex items-center justify-center" style={{ color: '#D2B073' }}><c.I className="h-5 w-5" /></div>
               <div className="mt-5 font-display text-lg font-semibold">{c.t}</div>
               <div className="mt-2 text-sm text-muted-foreground">{c.l.map((x) => <div key={x}>{x}</div>)}</div>
             </div>

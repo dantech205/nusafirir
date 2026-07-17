@@ -31,7 +31,7 @@ function About() {
       <section className="pb-24">
         <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-3 gap-6">
           <div className="rounded-3xl bg-card border border-border p-8">
-            <div className="h-14 w-14 rounded-full bg-foreground text-lime flex items-center justify-center"><Compass className="h-6 w-6" /></div>
+            <div className="h-14 w-14 rounded-full bg-foreground flex items-center justify-center" style={{ color: '#D2B073' }}><Compass className="h-6 w-6" /></div>
             <p className="mt-6 text-muted-foreground">At Voyanta we believe travel is more than visiting new places — it's a way of collecting stories, tasting cultures and returning home a little braver than you left.</p>
             <Link to="/contact" className="btn-outline-dark mt-6">Contact Us</Link>
           </div>

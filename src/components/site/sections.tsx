@@ -3,8 +3,8 @@ import { Compass, Globe2, Briefcase, Star, Phone, Play, Quote, Check } from "luc
 import { motion } from "framer-motion";
 import { Eyebrow } from "./Eyebrow";
 import { Counter } from "./Counter";
-import { IMG, services, team, testimonials, pricing, faqs, blog, values } from "@/data/site";
-import { useState } from "react";
+import { IMG, services, team, testimonials, faqs, blog, values } from "@/data/site";
+import { FormEvent, useState } from "react";
 
 export function AboutSection() {
   return (
@@ -12,14 +12,21 @@ export function AboutSection() {
       <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-14 items-start">
         <div>
           <Eyebrow>About Us</Eyebrow>
-          <h2 className="mt-5 text-4xl md:text-5xl leading-[1.05]">Curating Remarkable Events. Delivering Bespoke Experiences.</h2>
+          <h2 className="mt-5 text-4xl md:text-5xl leading-[1.05]" style={{ fontSize: '46px', fontWeight: 600 }}>
+            Curating Remarkable Events. Delivering Bespoke Experiences.
+          </h2>
         </div>
         <div className="space-y-6 text-muted-foreground">
           <div className="flex items-start gap-5">
-            <div className="h-14 w-14 shrink-0 rounded-full bg-foreground text-lime flex items-center justify-center"><Compass className="h-6 w-6" /></div>
-            <p>Nusafiri is a luxury hospitality and experiential concierge brand dedicated to creating meaningful, tailor-made experiences for discerning travelers, VIP guests, and visionary conveners.</p>
+            <div className="h-14 w-14 shrink-0 rounded-full" style={{ backgroundColor: '#D2B073' }}>
+              <div className="flex h-full w-full items-center justify-center">
+                <Compass className="h-6 w-6" style={{ color: '#16062B' }} />
+              </div>
+            </div>
+            <p style={{ fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif', color: '#52555B', fontSize: '16px' }}>
+              Nusafiri is a luxury hospitality and experiential concierge brand dedicated to creating meaningful, tailor-made experiences for discerning travelers, VIP guests, and visionary conveners.
+            </p>
           </div>
-          <p>From mountain escapes and tropical beaches to cultural discoveries and family retreats, we design journeys that fit how you actually travel — not the other way around.</p>
           <Link to="/about" className="btn-outline-dark mt-2">More About Us</Link>
         </div>
       </div>
@@ -33,7 +40,9 @@ export function StatsRow() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl mb-14">
           <h2 className="text-4xl md:text-5xl">Explore Around</h2>
-          <p className="mt-4 text-muted-foreground">From bespoke travel and wellness journeys to high-level guest management, event logistics, and intentional convenings, we offer a seamless fusion of service, excellence and care to curate unforgettable experiences.</p>
+          <p className="mt-4 text-muted-foreground" style={{ fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif', color: '#52555B', fontSize: '16px' }}>
+            From bespoke travel and wellness journeys to high-level guest management, event logistics, and intentional convenings, we offer a seamless fusion of service, excellence and care to curate unforgettable experiences.
+          </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           {[[7,"Years Experience"],[300,"Destinations"],[10000,"Happy Travelers"],[50,"Travel Experts"]].map(([n,l]) => (
@@ -57,7 +66,7 @@ export function WhyChooseUs() {
       <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-14 items-start">
         <div>
           <Eyebrow>Why Choose Us</Eyebrow>
-          <h2 className="mt-5 text-4xl md:text-5xl leading-[1.05]">Your Trusted Partner for Memorable Travel Experiences</h2>
+          <h2 className="mt-5 text-4xl md:text-5xl leading-[1.05]">Comprehensives Experiences tailored around your needs</h2>
           <div className="mt-10 grid grid-cols-2 gap-5">
             {cards.map((c) => (
               <div key={c.title} className={`rounded-3xl bg-card p-6 border ${c.highlight ? "border-lime" : "border-border"} transition hover:-translate-y-1 hover:shadow-lg`}>
@@ -69,7 +78,7 @@ export function WhyChooseUs() {
           </div>
         </div>
         <div className="relative h-[560px] rounded-3xl overflow-hidden shadow-xl">
-          <img src={IMG.turquoise} alt="" className="h-full w-full object-cover" />
+          <img src="/Overlay+Shadow.png" alt="" className="h-full w-full object-cover" />
         </div>
       </div>
     </section>
@@ -121,7 +130,7 @@ export function HowItWorks() {
         <div className="mt-14 grid md:grid-cols-4 gap-8">
           {steps.map((s) => (
             <motion.div key={s.n} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
-              <div className="text-lime text-5xl font-display font-semibold">{s.n}</div>
+              <div className="text-5xl font-display font-semibold" style={{ color: '#D2B073' }}>{s.n}</div>
               <div className="mt-4 text-xl font-display font-semibold">{s.t}</div>
               <p className="mt-3 text-sm text-muted-foreground">{s.d}</p>
             </motion.div>
@@ -222,34 +231,93 @@ export function TestimonialsSection({ items = testimonials.slice(0, 2) }: { item
 }
 
 export function PricingSection() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    plan: "Essential Escape",
+    date: "",
+    message: "",
+  });
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const subject = `Booking request: ${form.plan}`;
+    const body = `Name: ${form.name}%0D%0AEmail: ${form.email}%0D%0APhone: ${form.phone}%0D%0APlan: ${form.plan}%0D%0ADate: ${form.date}%0D%0AMessage: ${form.message}`;
+    window.location.href = `mailto:info@nusafiri.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+  };
+
   return (
     <section className="py-24 bg-background">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <h2 className="text-4xl md:text-5xl">Choose your pricing plans</h2>
-          <p className="mt-4 text-muted-foreground">Transparent tiers with no hidden fees. Every plan can be tailored — just ask.</p>
+          <h2 className="text-4xl md:text-5xl">Booking Request</h2>
+          <p className="mt-4 text-muted-foreground">Submit your booking request and we’ll open your email to send it directly.</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {pricing.map((p) => (
-            <div key={p.name} className={`rounded-3xl p-8 border transition ${p.highlight ? "bg-foreground text-primary-foreground border-foreground" : "bg-card border-border"}`}>
-              <div className={`h-12 w-12 rounded-full flex items-center justify-center ${p.highlight ? "bg-lime text-foreground" : "bg-muted"}`}>
-                <Compass className="h-5 w-5" />
-              </div>
-              <div className="mt-6 text-2xl font-display font-semibold">{p.name}</div>
-              <p className={`mt-2 text-sm ${p.highlight ? "text-white/70" : "text-muted-foreground"}`}>{p.desc}</p>
-              <div className="mt-6 flex items-end gap-2">
-                <div className="text-5xl font-display font-semibold">${p.price}</div>
-                <div className={`pb-2 text-sm ${p.highlight ? "text-white/70" : "text-muted-foreground"}`}>/ per person</div>
-              </div>
-              <Link to="/contact" search={{ plan: p.name }} className={p.highlight ? "btn-lime mt-6 w-full" : "btn-lime mt-6 w-full"}>Book Now</Link>
-              <ul className="mt-8 space-y-3 text-sm">
-                {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-3"><Check className={`h-4 w-4 mt-0.5 ${p.highlight ? "text-lime" : "text-foreground"}`} /> {f}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+        <form onSubmit={handleSubmit} className="grid gap-6 md:grid-cols-2">
+          <label className="space-y-2">
+            <span className="text-sm font-semibold">Full Name</span>
+            <input
+              type="text"
+              value={form.name}
+              onChange={(event) => setForm({ ...form, name: event.target.value })}
+              className="w-full rounded-2xl border border-border bg-card px-4 py-3 text-sm text-foreground outline-none transition focus:border-lime"
+              required
+            />
+          </label>
+          <label className="space-y-2">
+            <span className="text-sm font-semibold">Email</span>
+            <input
+              type="email"
+              value={form.email}
+              onChange={(event) => setForm({ ...form, email: event.target.value })}
+              className="w-full rounded-2xl border border-border bg-card px-4 py-3 text-sm text-foreground outline-none transition focus:border-lime"
+              required
+            />
+          </label>
+          <label className="space-y-2 md:col-span-2">
+            <span className="text-sm font-semibold">Preferred Plan</span>
+            <select
+              value={form.plan}
+              onChange={(event) => setForm({ ...form, plan: event.target.value })}
+              className="w-full rounded-2xl border border-border bg-card px-4 py-3 text-sm text-foreground outline-none transition focus:border-lime"
+            >
+              <option>Essential Escape</option>
+              <option>Premium Explorer</option>
+              <option>Luxury Paradise</option>
+            </select>
+          </label>
+          <label className="space-y-2">
+            <span className="text-sm font-semibold">Preferred Date</span>
+            <input
+              type="date"
+              value={form.date}
+              onChange={(event) => setForm({ ...form, date: event.target.value })}
+              className="w-full rounded-2xl border border-border bg-card px-4 py-3 text-sm text-foreground outline-none transition focus:border-lime"
+            />
+          </label>
+          <label className="space-y-2">
+            <span className="text-sm font-semibold">Phone</span>
+            <input
+              type="tel"
+              value={form.phone}
+              onChange={(event) => setForm({ ...form, phone: event.target.value })}
+              className="w-full rounded-2xl border border-border bg-card px-4 py-3 text-sm text-foreground outline-none transition focus:border-lime"
+            />
+          </label>
+          <label className="space-y-2 md:col-span-2">
+            <span className="text-sm font-semibold">Additional Details</span>
+            <textarea
+              value={form.message}
+              onChange={(event) => setForm({ ...form, message: event.target.value })}
+              className="w-full rounded-2xl border border-border bg-card px-4 py-3 text-sm text-foreground outline-none transition focus:border-lime min-h-[140px]"
+              placeholder="Tell us about your travel preferences..."
+            />
+          </label>
+          <button type="submit" className="btn-lime mt-2 w-full md:col-span-2">
+            Submit Booking Request
+          </button>
+        </form>
       </div>
     </section>
   );

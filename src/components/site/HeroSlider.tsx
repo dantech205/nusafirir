@@ -105,7 +105,10 @@ export function HeroSlider() {
         <div className="text-xs tracking-[0.3em] uppercase text-white/80 animate-fadeInUp">
           CONCIERGE • TRAVEL • HOSPITALITY
         </div>
-        <h1 className="mt-6 text-6xl md:text-8xl font-semibold max-w-4xl leading-[0.95] animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+        <h1
+          className="mt-6 font-display font-semibold max-w-4xl leading-[0.95] animate-fadeInUp"
+          style={{ animationDelay: '0.2s', fontFamily: 'Bricolage Grotesque, Inter, ui-sans-serif, system-ui, sans-serif', fontSize: '96px' }}
+        >
           {slides[currentSlide].title}
         </h1>
         <p className="mt-6 max-w-lg text-white/80 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
@@ -150,7 +153,7 @@ export function HeroSlider() {
             onClick={() => goToSlide(index)}
             className={`h-3 w-3 rounded-full transition duration-300 ${
               index === currentSlide
-                ? 'bg-lime w-8'
+                ? 'bg-[#D2B073] w-8'
                 : 'bg-white/40 hover:bg-white/60'
             }`}
             aria-label={`Go to slide ${index + 1}`}
