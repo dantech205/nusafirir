@@ -33,7 +33,7 @@ export const services = [
     included: ["All permits & park fees", "Expedition-grade equipment", "Trailside meals & hydration", "Support vehicle & medic on call", "Photography by lead guide"],
     benefit: "You leave with new confidence, new friends and stories that don't fit on a postcard. Adventure, done responsibly and beautifully." },
   { slug: "cultural-experiences", name: "Bespoke Experiences", tagline: "Meet the People, Music and Rituals That Shape a Place",
-    image: IMG.culture,
+    image: "/print.png",
     intro: "Travel deeper with immersive cultural journeys — private ceremonies, family-run kitchens, artisan studios and festivals you couldn't book on your own.",
     body: "We spend years building trust with the communities we visit. Our cultural experiences are quiet, respectful and genuinely reciprocal — designed to leave you moved and the community better off.",
     highlights: ["Private ceremony access", "Family-hosted meals", "Artisan workshops", "Local guide storyteller"],
