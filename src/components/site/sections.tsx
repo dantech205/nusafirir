@@ -69,7 +69,7 @@ export function WhyChooseUs() {
           <h2 className="mt-5 text-4xl md:text-5xl leading-[1.05]">Comprehensives Experiences tailored around your needs</h2>
           <div className="mt-10 grid grid-cols-2 gap-5">
             {cards.map((c) => (
-              <div key={c.title} className={`rounded-3xl bg-card p-6 border ${c.highlight ? "border-lime" : "border-border"} transition hover:-translate-y-1 hover:shadow-lg`}>
+              <div key={c.title} className="rounded-3xl bg-card p-6 border border-border transition hover:-translate-y-1 hover:shadow-lg">
                 <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center"><c.icon className="h-5 w-5" /></div>
                 <div className="mt-5 font-display text-lg font-semibold">{c.title}</div>
                 <p className="mt-2 text-sm text-muted-foreground">{c.body}</p>
@@ -78,7 +78,7 @@ export function WhyChooseUs() {
           </div>
         </div>
         <div className="relative h-[560px] rounded-3xl overflow-hidden shadow-xl">
-          <img src="/Overlay+Shadow.png" alt="" className="h-full w-full object-cover" />
+          <img src="/lady.png" alt="Lady" className="h-full w-full object-cover" />
         </div>
       </div>
     </section>
@@ -103,7 +103,6 @@ export function ServicesList() {
           {services.map((s) => (
             <Link key={s.slug} to="/service-details/$slug" params={{ slug: s.slug }} className="group relative aspect-[3/4] rounded-3xl overflow-hidden">
               <img src={s.image} alt={s.name} className="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 text-white">
                 <div className="text-xl font-display font-semibold">{s.name}</div>
                 <div className="mt-1 text-sm text-white/70 opacity-0 group-hover:opacity-100 transition">Explore →</div>

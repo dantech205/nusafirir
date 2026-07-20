@@ -16,7 +16,7 @@ export const IMG = {
 };
 
 export const services = [
-  { slug: "vacation-packages", name: "Vacation Packages", tagline: "Discover Unforgettable Getaways Tailored to Your Travel Style",
+  { slug: "vacation-packages", name: "Hospitality & Guest Management", tagline: "Discover Unforgettable Getaways Tailored to Your Travel Style",
     image: IMG.aerialBeach,
     intro: "Escape the ordinary with curated vacation packages designed around your rhythm. From sun-soaked beaches to alpine retreats, every itinerary is thoughtfully arranged so you can focus on the moments that matter.",
     body: "Whether you're chasing turquoise water or hidden mountain villages, our vacation packages combine handpicked stays, private transfers and local expertise into a single, seamless journey. Our specialists arrange every detail — from arrival to farewell — with a focus on comfort, story and place.",
@@ -24,7 +24,7 @@ export const services = [
     duration: "7 Days / 6 Nights", price: 1299,
     included: ["Return airport transfers", "Handpicked boutique stays", "Daily breakfast & selected meals", "Private guided experiences", "24/7 on-trip concierge"],
     benefit: "You return with more than photographs. Each Voyanta package is engineered to feel unhurried, personal and effortlessly organised — so the only thing you plan is what memory to make next." },
-  { slug: "adventure-tours", name: "Adventure Tours", tagline: "For Travelers Who Chase Horizons, Not Checklists",
+  { slug: "adventure-tours", name: "VIP/HNI Luxury Concierge", tagline: "For Travelers Who Chase Horizons, Not Checklists",
     image: IMG.waterfall,
     intro: "Trek jungle waterfalls, paddle glass-flat coves and summit the sunrise. Our adventure tours are built for the curious and the brave — with certified guides, considered gear and just enough comfort at the end of the day.",
     body: "From rainforest expeditions to volcanic hikes, we design adventure itineraries with a strong safety spine and a light footprint. Small groups, local guides and flexible pacing keep every day meaningful without feeling rushed.",
@@ -32,7 +32,7 @@ export const services = [
     duration: "5 Days / 4 Nights", price: 899,
     included: ["All permits & park fees", "Expedition-grade equipment", "Trailside meals & hydration", "Support vehicle & medic on call", "Photography by lead guide"],
     benefit: "You leave with new confidence, new friends and stories that don't fit on a postcard. Adventure, done responsibly and beautifully." },
-  { slug: "cultural-experiences", name: "Cultural Experiences", tagline: "Meet the People, Music and Rituals That Shape a Place",
+  { slug: "cultural-experiences", name: "Bespoke Experiences", tagline: "Meet the People, Music and Rituals That Shape a Place",
     image: IMG.culture,
     intro: "Travel deeper with immersive cultural journeys — private ceremonies, family-run kitchens, artisan studios and festivals you couldn't book on your own.",
     body: "We spend years building trust with the communities we visit. Our cultural experiences are quiet, respectful and genuinely reciprocal — designed to leave you moved and the community better off.",
@@ -40,7 +40,7 @@ export const services = [
     duration: "6 Days / 5 Nights", price: 1099,
     included: ["Community host fees", "All cultural entry & permits", "Traditional meals & tastings", "Interpreter & guide", "Handcrafted keepsake"],
     benefit: "A trip that changes the way you see home. Cultural travel with intention, warmth and depth." },
-  { slug: "business-travel", name: "Business Travel", tagline: "Frictionless Corporate Trips, Handled End-to-End",
+  { slug: "business-travel", name: "Travel Concierge/ Logistics", tagline: "Frictionless Corporate Trips, Handled End-to-End",
     image: IMG.train,
     intro: "Executive-grade travel management with real humans on call. From last-minute rebookings to full multi-city itineraries, we keep your team moving.",
     body: "Voyanta corporate travel blends senior travel managers with quiet, quality vendor relationships. We negotiate rates, manage policy compliance and act as a single point of contact 24/7.",
