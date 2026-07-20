@@ -5,7 +5,7 @@ import { CtaBanner } from "@/components/site/CtaBanner";
 import { PageHero } from "@/components/site/PageHero";
 import { Eyebrow } from "@/components/site/Eyebrow";
 import { Counter } from "@/components/site/Counter";
-import { WhyChooseUs, TeamGrid, TestimonialsSection, ValuesSection } from "@/components/site/sections";
+import { WhyChooseUs, TestimonialsSection, ValuesSection } from "@/components/site/sections";
 import { IMG } from "@/data/site";
 import { Compass } from "lucide-react";
 
@@ -54,7 +54,6 @@ function About() {
       </section>
       <ValuesSection withPhoto />
       <WhyChooseUs />
-      <TeamGrid />
       <TestimonialsSection />
       <CtaBanner />
       <Footer />
