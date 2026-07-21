@@ -25,7 +25,7 @@ export const services = [
     included: ["Return airport transfers", "Handpicked boutique stays", "Daily breakfast & selected meals", "Private guided experiences", "24/7 on-trip concierge"],
     benefit: "You return with more than photographs. Each Voyanta package is engineered to feel unhurried, personal and effortlessly organised — so the only thing you plan is what memory to make next." },
   { slug: "adventure-tours", name: "VIP/HNI Luxury Concierge", tagline: "For Travelers Who Chase Horizons, Not Checklists",
-    image: IMG.waterfall,
+    image: "/excere.jpeg",
     intro: "Trek jungle waterfalls, paddle glass-flat coves and summit the sunrise. Our adventure tours are built for the curious and the brave — with certified guides, considered gear and just enough comfort at the end of the day.",
     body: "From rainforest expeditions to volcanic hikes, we design adventure itineraries with a strong safety spine and a light footprint. Small groups, local guides and flexible pacing keep every day meaningful without feeling rushed.",
     highlights: ["Certified local guides", "Small-group departures", "Premium gear included", "Sunrise summit day"],
