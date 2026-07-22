@@ -103,9 +103,9 @@ export function ServicesList() {
           {services.map((s) => (
             <Link key={s.slug} to="/service-details/$slug" params={{ slug: s.slug }} className="group relative aspect-[3/4] rounded-3xl overflow-hidden">
               <img src={s.image} alt={s.name} className="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
-              <div className="absolute inset-x-0 bottom-0 p-6 text-white drop-shadow bg-gradient-to-t from-black/80 via-black/20 to-transparent">
-                <div className="text-xl font-display font-semibold drop-shadow-xl">{s.name}</div>
-                <div className="mt-1 text-sm text-white/80 opacity-0 group-hover:opacity-100 transition drop-shadow-sm">Explore →</div>
+              <div className="absolute inset-x-0 bottom-0 p-6 text-white bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+                <div className="text-xl font-display font-semibold text-shadow">{s.name}</div>
+                <div className="mt-1 text-sm text-white/80 opacity-0 group-hover:opacity-100 transition text-shadow-sm">Explore →</div>
               </div>
             </Link>
           ))}
