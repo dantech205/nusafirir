@@ -18,7 +18,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
     <header className="absolute top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
       <div className="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between py-2">
         <Link to="/" className={`flex items-center gap-2 text-xl font-display font-semibold tracking-tight ${solid ? "text-foreground" : "text-white"}`}>
-          <img src="/logo Nusafiri.png" alt="Nusafiri" className="h-12 md:h-20 w-auto mt-3 md:mt-0" />
+          <img src="/logo Nusafiri.png" alt="Nusafiri" className="h-12 md:h-20 w-auto mt-3 md:mt-4" />
         </Link>
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide">
           {mainMenu.map((l) => (
@@ -35,7 +35,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
       {open && (
         <div className="fixed inset-0 z-50 bg-white flex flex-col">
           <div className="flex items-center justify-between h-20 px-6 border-b border-border">
-            <img src="/logo Nusafiri.png" alt="Nusafiri" className="h-12 md:h-20 w-auto mt-3 md:mt-0" />
+            <img src="/logo Nusafiri.png" alt="Nusafiri" className="h-12 md:h-20 w-auto mt-3 md:mt-4" />
             <button onClick={() => setOpen(false)} aria-label="Close"><X /></button>
           </div>
           <nav className="flex flex-col px-6 py-6 gap-4 text-lg">
