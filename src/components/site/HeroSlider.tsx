@@ -101,13 +101,13 @@ export function HeroSlider() {
       </div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 z-10 mx-auto max-w-7xl px-6 pt-40 pb-24 text-white min-h-screen flex flex-col justify-center pointer-events-none">
+      <div className="absolute inset-0 z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-20 md:pt-40 pb-24 text-white min-h-screen flex flex-col justify-center pointer-events-none">
         <div className="text-xs tracking-[0.3em] uppercase text-white/80 animate-fadeInUp">
           CONCIERGE • TRAVEL • HOSPITALITY
         </div>
         <h1
-          className="mt-6 font-display font-semibold max-w-4xl leading-[0.95] animate-fadeInUp"
-          style={{ animationDelay: '0.2s', fontFamily: 'Bricolage Grotesque, Inter, ui-sans-serif, system-ui, sans-serif', fontSize: '96px' }}
+          className="mt-6 font-display font-semibold max-w-4xl leading-tight animate-fadeInUp text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[96px]"
+          style={{ animationDelay: '0.2s', fontFamily: 'Bricolage Grotesque, Inter, ui-sans-serif, system-ui, sans-serif' }}
         >
           {slides[currentSlide].title}
         </h1>
