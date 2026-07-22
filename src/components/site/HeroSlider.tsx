@@ -60,9 +60,9 @@ export function HeroSlider() {
   };
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden group">
+    <div className="relative min-h-[80vh] md:min-h-screen w-full overflow-hidden group">
       {/* Slides Container */}
-      <div className="relative w-full h-screen">
+      <div className="relative w-full h-[70vh] md:h-screen">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -101,7 +101,7 @@ export function HeroSlider() {
       </div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-20 md:pt-40 pb-24 text-white min-h-screen flex flex-col justify-center pointer-events-none">
+      <div className="absolute inset-0 z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-16 md:pt-40 pb-24 text-white min-h-[80vh] md:min-h-screen flex flex-col justify-center pointer-events-none">
         <div className="text-xs tracking-[0.3em] uppercase text-white/80 animate-fadeInUp">
           CONCIERGE • TRAVEL • HOSPITALITY
         </div>
