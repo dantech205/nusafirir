@@ -203,7 +203,7 @@ export function TestimonialsSection({ items = testimonials.slice(0, 2) }: { item
         <div>
           <Eyebrow>Testimonials</Eyebrow>
           <h2 className="mt-5 text-4xl md:text-5xl leading-[1.05]">What Our Travelers Say</h2>
-          <p className="mt-4 text-muted-foreground max-w-md">Real stories from real Voyanta travelers — from solo adventurers to families of five.</p>
+          <p className="mt-4 text-muted-foreground max-w-md">Real stories from real Nusafiri travelers — from solo adventurers to families of five.</p>
           <div className="mt-10 relative w-64 aspect-video rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
             <img src={IMG.mountain} alt="" className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-black/30 flex items-center justify-center">

@@ -8,7 +8,7 @@ import { Quote } from "lucide-react";
 
 export const Route = createFileRoute("/testimonial")({
   component: TestimonialPage,
-  head: () => ({ meta: [{ title: "Testimonials — Voyanta" }, { name: "description", content: "What Voyanta travelers say about their journeys." }] }),
+  head: () => ({ meta: [{ title: "Testimonials — Nusafiri" }, { name: "description", content: "What Nusafiri travelers say about their journeys." }] }),
 });
 
 function TestimonialPage() {

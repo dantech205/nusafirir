@@ -7,7 +7,7 @@ import { IMG, blog } from "@/data/site";
 
 export const Route = createFileRoute("/blog")({
   component: Blog,
-  head: () => ({ meta: [{ title: "Blog — Voyanta" }, { name: "description", content: "Travel stories, tips and destination guides from the Voyanta team." }] }),
+  head: () => ({ meta: [{ title: "Blog — Nusafiri" }, { name: "description", content: "Travel stories, tips and destination guides from the Nusafiri team." }] }),
 });
 
 function Blog() {

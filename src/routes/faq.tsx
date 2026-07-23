@@ -16,5 +16,5 @@ export const Route = createFileRoute("/faq")({
       <Footer />
     </div>
   ),
-  head: () => ({ meta: [{ title: "FAQ — Voyanta" }, { name: "description", content: "Answers to common questions about booking, payments, itineraries and support." }] }),
+  head: () => ({ meta: [{ title: "FAQ — Nusafiri" }, { name: "description", content: "Answers to common questions about booking, payments, itineraries and support." }] }),
 });

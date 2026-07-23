@@ -20,5 +20,5 @@ export const Route = createFileRoute("/404")({
       <Footer />
     </div>
   ),
-  head: () => ({ meta: [{ title: "404 — Voyanta" }] }),
+  head: () => ({ meta: [{ title: "404 — Nusafiri" }] }),
 });

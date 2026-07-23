@@ -20,5 +20,5 @@ export const Route = createFileRoute("/notice")({
       <Footer />
     </div>
   ),
-  head: () => ({ meta: [{ title: "Notice — Voyanta" }] }),
+  head: () => ({ meta: [{ title: "Notice — Nusafiri" }] }),
 });

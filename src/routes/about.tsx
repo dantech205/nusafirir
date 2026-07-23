@@ -11,7 +11,7 @@ import { Compass } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
   component: About,
-  head: () => ({ meta: [{ title: "About — Voyanta" }, { name: "description", content: "Meet Voyanta — a travel agency crafting unforgettable, considered journeys around the world." }] }),
+  head: () => ({ meta: [{ title: "About — Nusafiri" }, { name: "description", content: "Meet Nusafiri — a travel agency crafting unforgettable, considered journeys around the world." }] }),
 });
 
 function About() {
@@ -25,14 +25,14 @@ function About() {
             <Eyebrow>About Us</Eyebrow>
             <h2 className="mt-5 text-4xl md:text-5xl leading-[1.05]">Creating Unforgettable Journeys Around the World</h2>
           </div>
-          <p className="text-muted-foreground text-lg">Voyanta is a small team of travel obsessives with a simple belief: the best trips are the ones designed around you. We combine deep destination knowledge with quiet vendor relationships and 24/7 support.</p>
+          <p className="text-muted-foreground text-lg">Nusafiri is a small team of travel obsessives with a simple belief: the best trips are the ones designed around you. We combine deep destination knowledge with quiet vendor relationships and 24/7 support.</p>
         </div>
       </section>
       <section className="pb-24">
         <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-3 gap-6">
           <div className="rounded-3xl bg-card border border-border p-8">
             <div className="h-14 w-14 rounded-full bg-foreground flex items-center justify-center" style={{ color: '#D2B073' }}><Compass className="h-6 w-6" /></div>
-            <p className="mt-6 text-muted-foreground">At Voyanta we believe travel is more than visiting new places — it's a way of collecting stories, tasting cultures and returning home a little braver than you left.</p>
+            <p className="mt-6 text-muted-foreground">At Nusafiri we believe travel is more than visiting new places — it's a way of collecting stories, tasting cultures and returning home a little braver than you left.</p>
             <Link to="/contact" className="btn-outline-dark mt-6">Contact Us</Link>
           </div>
           <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">

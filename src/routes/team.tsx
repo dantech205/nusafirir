@@ -16,5 +16,5 @@ export const Route = createFileRoute("/team")({
       <Footer />
     </div>
   ),
-  head: () => ({ meta: [{ title: "Team — Voyanta" }, { name: "description", content: "The Voyanta team — travel designers, guides and operators behind every journey." }] }),
+  head: () => ({ meta: [{ title: "Team — Nusafiri" }, { name: "description", content: "The Nusafiri team — travel designers, guides and operators behind every journey." }] }),
 });

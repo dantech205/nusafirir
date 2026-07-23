@@ -16,5 +16,5 @@ export const Route = createFileRoute("/pricing")({
       <Footer />
     </div>
   ),
-  head: () => ({ meta: [{ title: "Pricing — Voyanta" }, { name: "description", content: "Transparent Voyanta travel pricing — Essential, Premium and Luxury tiers." }] }),
+  head: () => ({ meta: [{ title: "Pricing — Nusafiri" }, { name: "description", content: "Transparent Nusafiri travel pricing — Essential, Premium and Luxury tiers." }] }),
 });

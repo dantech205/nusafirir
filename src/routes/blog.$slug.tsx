@@ -14,7 +14,7 @@ export const Route = createFileRoute("/blog/$slug")({
   },
   head: ({ loaderData }) => ({
     meta: loaderData ? [
-      { title: `${loaderData.title} — Voyanta` },
+      { title: `${loaderData.title} — Nusafiri` },
       { name: "description", content: loaderData.excerpt },
       { property: "og:image", content: loaderData.img },
     ] : [],
@@ -33,7 +33,7 @@ function Post() {
         <div className="mx-auto max-w-3xl px-6">
           <div className="text-xs uppercase tracking-widest text-muted-foreground">{post.author} — {post.date}</div>
           <p className="mt-6 text-lg text-muted-foreground">{post.excerpt}</p>
-          <p className="mt-6">Every destination has a rhythm. The trick — for travelers and for planners — is learning to listen to it. In this piece we unpack how the Voyanta team approaches destination research, how we test itineraries before you ever see them, and the small choices that separate a good trip from a great one.</p>
+          <p className="mt-6">Every destination has a rhythm. The trick — for travelers and for planners — is learning to listen to it. In this piece we unpack how the Nusafiri team approaches destination research, how we test itineraries before you ever see them, and the small choices that separate a good trip from a great one.</p>
           <p className="mt-4">Whether you're headed for an overwater villa or a village kitchen, the same principle applies: fewer things, done well, always beats more things, done in a rush.</p>
           <Link to="/blog" className="btn-outline-dark mt-10">← All stories</Link>
         </div>

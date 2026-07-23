@@ -15,7 +15,7 @@ const jobs = [
 
 export const Route = createFileRoute("/career")({
   component: Career,
-  head: () => ({ meta: [{ title: "Careers — Voyanta" }, { name: "description", content: "Open roles at Voyanta. Join a team that builds trips travelers remember for a lifetime." }] }),
+  head: () => ({ meta: [{ title: "Careers — Nusafiri" }, { name: "description", content: "Open roles at Nusafiri. Join a team that builds trips travelers remember for a lifetime." }] }),
 });
 
 function Career() {

@@ -9,7 +9,7 @@ import { Phone, Clock, MapPin } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   component: Contact,
-  head: () => ({ meta: [{ title: "Contact — Voyanta" }, { name: "description", content: "Talk to a Voyanta travel consultant. We reply within one business day." }] }),
+  head: () => ({ meta: [{ title: "Contact — Nusafiri" }, { name: "description", content: "Talk to a Nusafiri travel consultant. We reply within one business day." }] }),
 });
 
 type FormValues = { name: string; email: string; phone: string; message: string };
@@ -65,7 +65,7 @@ function Contact() {
       <section className="pb-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="aspect-[21/9] rounded-3xl overflow-hidden">
-            <iframe title="Voyanta office" src="https://www.openstreetmap.org/export/embed.html?bbox=-118.5%2C34.00%2C-118.45%2C34.03&layer=mapnik" className="h-full w-full border-0" />
+            <iframe title="Nusafiri office" src="https://www.openstreetmap.org/export/embed.html?bbox=-118.5%2C34.00%2C-118.45%2C34.03&layer=mapnik" className="h-full w-full border-0" />
           </div>
         </div>
       </section>

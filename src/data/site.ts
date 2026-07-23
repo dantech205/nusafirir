@@ -23,7 +23,7 @@ export const services = [
     highlights: ["Overwater Villa", "All-Inclusive Dining", "Snorkeling Experience", "Romantic Sunset Cruise"],
     duration: "7 Days / 6 Nights", price: 1299,
     included: ["Return airport transfers", "Handpicked boutique stays", "Daily breakfast & selected meals", "Private guided experiences", "24/7 on-trip concierge"],
-    benefit: "You return with more than photographs. Each Voyanta package is engineered to feel unhurried, personal and effortlessly organised — so the only thing you plan is what memory to make next." },
+    benefit: "You return with more than photographs. Each Nusafiri package is engineered to feel unhurried, personal and effortlessly organised — so the only thing you plan is what memory to make next." },
   { slug: "adventure-tours", name: "VIP/HNI Luxury Concierge", tagline: "For Travelers Who Chase Horizons, Not Checklists",
     image: "/excere.jpeg",
     intro: "Trek jungle waterfalls, paddle glass-flat coves and summit the sunrise. Our adventure tours are built for the curious and the brave — with certified guides, considered gear and just enough comfort at the end of the day.",
@@ -43,7 +43,7 @@ export const services = [
   { slug: "business-travel", name: "Travel Concierge/ Logistics", tagline: "Frictionless Corporate Trips, Handled End-to-End",
     image: IMG.train,
     intro: "Executive-grade travel management with real humans on call. From last-minute rebookings to full multi-city itineraries, we keep your team moving.",
-    body: "Voyanta corporate travel blends senior travel managers with quiet, quality vendor relationships. We negotiate rates, manage policy compliance and act as a single point of contact 24/7.",
+    body: "Nusafiri corporate travel blends senior travel managers with quiet, quality vendor relationships. We negotiate rates, manage policy compliance and act as a single point of contact 24/7.",
     highlights: ["24/7 travel desk", "Priority rebooking", "Global lounge access", "Consolidated invoicing"],
     duration: "Flexible", price: 249,
     included: ["Dedicated account manager", "Corporate rate program", "Policy compliance reporting", "Traveler safety tracking", "Emergency rebooking within 15 min"],
@@ -60,7 +60,7 @@ export const team = [
 ];
 
 export const testimonials = [
-  { name: "Sarah Mitchell", type: "Adventure Traveler", quote: "Voyanta planned a rainforest trek I didn't think was possible. Every detail was thought through — from the boots to the sunrise coffee at the summit." },
+  { name: "Sarah Mitchell", type: "Adventure Traveler", quote: "Nusafiri planned a rainforest trek I didn't think was possible. Every detail was thought through — from the boots to the sunrise coffee at the summit." },
   { name: "James Carter", type: "Family Traveler", quote: "Two kids, three cities, zero stress. Their team rebooked a missed connection before I even noticed. This is how travel should feel." },
   { name: "Priya Shah", type: "Solo Traveler", quote: "The cultural experiences were quiet, respectful and deeply moving. I came home changed — and that's what I wanted." },
   { name: "Marcus Bell", type: "Business Traveler", quote: "Our corporate travel is finally boring, in the best way. Clean invoices, fast rebookings, and real humans on call." },
@@ -73,12 +73,12 @@ export const pricing = [
 ];
 
 export const faqs = [
-  { q: "How do I book a trip with Voyanta?", a: "Send us an enquiry through the contact form or pick a package on our pricing page. A travel consultant will confirm availability, dates and preferences within one business day and share a tailored itinerary for approval." },
+  { q: "How do I book a trip with Nusafiri?", a: "Send us an enquiry through the contact form or pick a package on our pricing page. A travel consultant will confirm availability, dates and preferences within one business day and share a tailored itinerary for approval." },
   { q: "What payment methods do you accept?", a: "We accept all major credit and debit cards, bank transfer and secure online payment via Stripe. For premium and luxury packages, a 30% deposit secures your booking with the balance due 30 days before departure." },
-  { q: "Is accommodation included in the package price?", a: "Yes. Every published Voyanta package includes accommodation matched to the tier — standard, premium or luxury — along with daily breakfast at minimum. Additional meals are listed in each package's inclusions." },
+  { q: "Is accommodation included in the package price?", a: "Yes. Every published Nusafiri package includes accommodation matched to the tier — standard, premium or luxury — along with daily breakfast at minimum. Additional meals are listed in each package's inclusions." },
   { q: "Can I customize my itinerary?", a: "Absolutely. Every itinerary is a starting point. Tell us how you travel — pace, interests, dietary needs, non-negotiables — and we'll rebuild the plan around you at no extra design fee." },
   { q: "Are flights included?", a: "International flights are not included by default, but our team is happy to source and ticket them for you at competitive rates. Domestic and inter-island flights are usually included where they're essential to the itinerary." },
-  { q: "Do you provide airport transfers?", a: "Yes. Return airport transfers are included in every package by private vehicle. A driver will meet you inside the terminal with a Voyanta sign and a bottle of water." },
+  { q: "Do you provide airport transfers?", a: "Yes. Return airport transfers are included in every package by private vehicle. A driver will meet you inside the terminal with a Nusafiri sign and a bottle of water." },
 ];
 
 export const blog = [
